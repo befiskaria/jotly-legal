@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete Your JotSpace Account</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      max-width: 760px;
+      margin: 2em auto;
+      padding: 0 1em;
+      color: #111;
+    }
+    h1 { font-size: 32px; line-height: 1.3; }
+    h2 { font-size: 22px; margin-top: 1.6em; }
+    a { color: #0d6efd; }
+    code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    pre {
+      background: #f4f4f6;
+      padding: 1em;
+      overflow-x: auto;
+      border-radius: 6px;
+    }
+    .box {
+      background: #f7f8fa;
+      border: 1px solid #e1e4e8;
+      border-radius: 8px;
+      padding: 1em 1.25em;
+      margin: 1.25em 0;
+    }
+    .mailto {
+      display: inline-block;
+      background: #0d9488;
+      color: #fff !important;
+      padding: 0.55em 1em;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .mailto:hover { background: #0b7e74; }
+    ul, ol { padding-left: 1.4em; }
+    li { margin-bottom: 0.4em; }
+    footer { margin-top: 3em; font-size: 13px; color: #6a737d; }
+  </style>
+</head>
+<body>
+
+<h1>Delete Your JotSpace Account &amp; Data</h1>
+
+<p><strong>Last updated:</strong> May 10, 2026</p>
+
+<p>This page explains how to delete your JotSpace account and the personal data
+associated with it. You can request deletion either from inside the app or by
+email — you do not need to have the app installed to request deletion.</p>
+
+<h2>Option 1 — Delete from inside the app (fastest)</h2>
+
+<ol>
+  <li>Open <strong>JotSpace</strong> on your Android device.</li>
+  <li>Sign in if you are not already signed in.</li>
+  <li>Tap <strong>Settings</strong> → <strong>Account</strong> → <strong>Delete Account</strong>.</li>
+  <li>Confirm the prompt. The app will sign you out and submit the deletion request immediately.</li>
+</ol>
+
+<h2>Option 2 — Delete by email (no app required)</h2>
+
+<p>If you do not have the app installed, or you can no longer sign in, you can
+request deletion by email.</p>
+
+<div class="box">
+  <p style="margin:0 0 0.6em 0;"><strong>Send an email to:</strong></p>
+  <p style="margin:0 0 0.8em 0;">
+    <a class="mailto" href="mailto:JotSpace@zohomailcloud.ca?subject=Account%20Deletion%20Request">JotSpace@zohomailcloud.ca</a>
+  </p>
+  <p style="margin:0;">
+    <strong>Subject:</strong> Account Deletion Request<br>
+    <strong>From:</strong> the email address associated with your JotSpace account
+  </p>
+</div>
+
+<p>Please include the following so we can verify your identity and locate your
+account:</p>
+<ul>
+  <li>The email address tied to your Google sign-in for JotSpace.</li>
+  <li>(Optional) Your JotSpace username, if you remember it.</li>
+  <li>A short note confirming you want your account and data deleted.</li>
+</ul>
+
+<p>We respond within 30 days. If we need to verify your identity, we may ask
+you to confirm the request from the email address on file.</p>
+
+<h2>What gets deleted</h2>
+
+<p>When your account is deleted, the following is removed from our backend
+(Firebase) within 30 days:</p>
+<ul>
+  <li>Your Firebase Authentication record (email, sign-in provider, user ID).</li>
+  <li>Your public profile (username, display name, bio, avatar reference).</li>
+  <li>Your friends list and pending friend requests.</li>
+  <li>Your push-notification (FCM) registration token.</li>
+  <li>Your in-app support-chat messages.</li>
+  <li>Direct messages and group-chat messages you authored, including their
+      end-to-end-encrypted ciphertext blobs on our servers.</li>
+  <li>Your Quiz Hub / Forms / JotSplit / Announcement Board submissions tied
+      to your user ID.</li>
+</ul>
+
+<h2>What does not get deleted automatically</h2>
+
+<p>Some data is outside JotSpace's servers and you control it directly:</p>
+
+<ul>
+  <li>
+    <strong>Local data on your device.</strong> Notes, journals, recipes,
+    expenses, voice notes, and other personal content stored only on your
+    Android device are not on our servers. To delete this, uninstall the
+    app, or use Android Settings → Apps → JotSpace → Storage → Clear all data.
+  </li>
+  <li>
+    <strong>Encrypted cloud backups in your own Google Drive or OneDrive.</strong>
+    JotSpace stores backups inside <em>your</em> Drive/OneDrive account in an
+    app-managed folder. We cannot read or delete those for you. To delete
+    them, sign in to <a href="https://drive.google.com/">Google Drive</a> or
+    <a href="https://onedrive.live.com/">OneDrive</a> and remove the JotSpace
+    folder, or revoke JotSpace's access at
+    <a href="https://myaccount.google.com/permissions">Google Account permissions</a>
+    or
+    <a href="https://account.microsoft.com/privacy/app-access">Microsoft App access</a>.
+  </li>
+  <li>
+    <strong>Group-chat messages on other users' devices.</strong> Messages you
+    sent that other people have already received remain on their devices. We
+    replace your authorship pointer with "Deleted user" on our servers, but
+    we cannot reach into other users' phones.
+  </li>
+</ul>
+
+<h2>Questions or problems</h2>
+
+<p>If you do not receive a confirmation within 30 days, or if you need help
+with anything above, write to
+<a href="mailto:JotSpace@zohomailcloud.ca">JotSpace@zohomailcloud.ca</a>.</p>
+
+<p>For the full description of how JotSpace handles your data, see the
+<a href="./privacy.html">Privacy Policy</a>.</p>
+
+<footer>
+  JotSpace · Ontario, Canada · Contact:
+  <a href="mailto:JotSpace@zohomailcloud.ca">JotSpace@zohomailcloud.ca</a>
+</footer>
+
+</body>
+</html>
