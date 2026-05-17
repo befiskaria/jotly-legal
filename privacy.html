@@ -276,7 +276,7 @@
 <p>The Application requests the following Android runtime permissions only for the features described:</p>
 <ul>
 	<li><strong>Camera</strong> — for the in-house QR-code scanner (used to add friends and accept session invites) and for capturing photos to attach to a note or message. Camera frames for QR scanning are processed on-Device using on-Device ML Kit barcode scanning and are <strong>not</strong> sent to any server.</li>
-	<li><strong>Microphone (RECORD_AUDIO)</strong> — only to record Voice Notes that You explicitly start. Audio is stored on the Device.</li>
+	<li><strong>Microphone (RECORD_AUDIO, FOREGROUND_SERVICE_MICROPHONE)</strong> — only to record Voice Notes that You explicitly start. Audio is stored on the Device. While a recording is in progress, the Application runs a microphone foreground service that shows an ongoing notification in the system shade and keeps the recording alive if You navigate away from the Application or lock the screen. The recording ends when You tap the in-app stop button; dismissing the notification does not stop the recording.</li>
 	<li><strong>Approximate location (ACCESS_COARSE_LOCATION)</strong> — only used by the Weather Folio, as described above.</li>
 	<li><strong>Notifications (POST_NOTIFICATIONS)</strong> — to deliver reminder and chat notifications.</li>
 	<li><strong>Exact alarms (SCHEDULE_EXACT_ALARM, USE_EXACT_ALARM) and boot-completed receiver</strong> — to fire reminder notifications at the time You scheduled them, including after a device restart. If You revoke exact-alarm access in system settings, reminders fall back automatically to inexact alarms (which may fire a few minutes later than scheduled).</li>
