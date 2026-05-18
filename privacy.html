@@ -135,6 +135,12 @@
 			<td>Yes — only when You enable the feature, sent to the third-party provider You configured (Groq, Tavily, or Serper) using <strong>Your</strong> API key</td>
 		</tr>
 		<tr>
+			<td>Voice Note audio sent to AI</td>
+			<td>The raw audio bytes of a Voice Note You explicitly choose to transcribe, summarise, smart-rename, translate, or ask a question about, plus the resulting transcript text</td>
+			<td>To produce a transcript and downstream AI features (summary, smart rename, translation, question answering) when You enable a Voice Notes AI feature and supply Your own Groq API key</td>
+			<td>Yes — only when You explicitly invoke one of these features (or enable Auto-transcribe on stop), sent directly from Your Device to Groq using <strong>Your</strong> API key. The Application does not transmit audio bytes to any AI provider unless You explicitly invoke a Voice Notes AI feature.</td>
+		</tr>
+		<tr>
 			<td>AI-generated content feedback (optional)</td>
 			<td>The text of an AI-generated response You flag, the category You select (e.g. inaccurate, inappropriate), and any free-text note You add</td>
 			<td>To investigate AI quality and safety reports and improve safety guardrails on AI features</td>
@@ -253,12 +259,13 @@
 
 <p>JotSpace integrates optional AI chat and web-search features powered by third-party APIs:</p>
 <ul>
-	<li><strong>Groq</strong> — large-language-model inference for AI chat and AI vision (image tagging in the Files plugin).</li>
+	<li><strong>Groq</strong> — large-language-model inference for AI chat, AI vision (image tagging in the Files plugin), and Voice Notes AI features (Whisper transcription, summary, smart rename, translation, and "ask about this recording").</li>
 	<li><strong>Tavily</strong> and <strong>Serper</strong> — web-search providers that supplement AI chat with current information.</li>
 </ul>
 <p>These features are <strong>off by default</strong>. To enable them, You must obtain Your own API key from the respective provider and paste it into the Application Settings. The Company does not host an AI proxy and does not see Your prompts or responses in normal use. When You use an AI feature:</p>
 <ul>
 	<li>The text You enter and the immediate context of Your conversation are transmitted directly from Your Device to the provider You configured, using <strong>Your</strong> API key.</li>
+	<li>For Voice Notes AI features specifically (Transcribe, AI summary, Smart rename, Translate transcript, Ask about this recording, or Auto-transcribe on stop), the recorded <strong>audio bytes</strong> and any derived transcript text are also sent directly from Your Device to Groq using Your own API key. Audio is sent <strong>only</strong> when You explicitly invoke one of these features (or enable Auto-transcribe on stop in Voice settings). The Application never transmits Voice Note audio bytes to any AI provider in the background.</li>
 	<li>The provider's privacy policy and data-processing terms govern how they handle Your prompt. We strongly recommend reviewing the privacy policies of <a href="https://groq.com/privacy-policy/">Groq</a>, <a href="https://tavily.com/privacy">Tavily</a>, and <a href="https://serper.dev/privacy-policy">Serper</a> before enabling these features.</li>
 	<li>JotSpace does <strong>not</strong> use Your notes, cloud backups, or other personal content to train AI models. JotSpace does not train any AI model itself.</li>
 </ul>
